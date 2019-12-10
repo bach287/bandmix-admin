@@ -1,0 +1,297 @@
+.head{
+    background-color: rgba(0,0,0,0.79);
+}
+.container{
+  background-color:  #f5f1f196;
+  padding: 20px 0;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+
+  border-bottom: 4px solid #bbbaba;
+  color: #fff;
+  padding-bottom:2px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  transition: 0.6s ease;
+  background: #343a40;
+  color: #d4d1d1;
+}
+.active{
+  font-weight: bold;
+}
+.navbar{
+      padding: 8px 0 8px 100px;
+}
+.search-container{
+  margin-left: 180px;
+}
+ .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.body{
+  padding-top: 66px;
+}
+.carousel-caption h3 {
+  animation-delay: 1s;
+}
+
+.carousel-caption button {
+  animation-delay: 2s;
+}
+
+.carousel-item img {
+  opacity: 0.9;
+}
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+audio, canvas, img, video {
+    max-width: 100%;
+    /* height: auto; */
+    box-sizing: border-box;
+}
+/*title*/
+.title {
+    text-align: center;
+    padding: 30px 400px 30px 400px;
+}
+.title hr {
+    background-color: #007bff;
+}
+
+/*hover ảnh band*/
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  margin: 10px;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  max-width: 350px;
+  max-height: 270px;
+  border-radius: 3px;
+}
+
+.hovereffect:hover img {
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 0.5em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect p {
+  color: #FFF;
+  padding: 10px 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 5px 0 0 0;
+  background-color: transparent;
+  -webkit-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+.hovereffect:hover a.info {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0.2s;
+}
+.fa-star{
+  color: #ff9b00;
+}
+/*hover Event*/
+.hovereffectE {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+padding: 15px;
+}
+
+.hovereffectE .overlayE {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffectE img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+  max-width: 350px;
+  max-height: 270px;
+  border-radius: 3px;
+}
+
+.hovereffectE h2 {
+text-transform:uppercase;
+color:#fff;
+text-align:center;
+position:relative;
+font-size:17px;
+background:rgba(0,0,0,0.6);
+-webkit-transform:translatey(-100px);
+-ms-transform:translatey(-100px);
+transform:translatey(-100px);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+padding:10px;
+}
+
+.hovereffectE a.infoE {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#fff;
+border:1px solid #fff;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all 0s ease-in-out;
+transition:all .2s ease-in-out;
+margin:50px 0 0;
+padding:7px 14px;
+}
+.hovereffectE p {
+  color: #FFF; 
+    margin-bottom: 5px;
+    margin-top: 15px;
+    padding: 10px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffectE a.infoE:hover {
+box-shadow:0 0 5px #fff;
+}
+
+.hovereffectE:hover img {
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+
+.hovereffectE:hover .overlayE {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.hovereffectE:hover h2,.hovereffectE:hover a.infoE,.hovereffectE:hover p  {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+.hovereffectE:hover a.infoE {
+-webkit-transition-delay:0s;
+transition-delay:.2s;
+}
+/*contact*/
+.contact{
+  margin-top: 100px;
+}
+.contactleft{
+    border: 1px solid #c7c6c6;
+    border-radius: 3px;
+    padding: 20px;
+
+}
+.footer{
+  color: white;
+  background-color: #343a40;
+}
